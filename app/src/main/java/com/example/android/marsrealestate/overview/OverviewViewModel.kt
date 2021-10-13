@@ -50,7 +50,7 @@ class OverviewViewModel : ViewModel() {
     private fun getMarsRealEstateProperties() {
         MarsApi.retrofitService.getProperties().enqueue( object: Callback<String>{
             override fun onFailure(call: Call<String>, t: Throwable) {
-                _response.value = "Faliure " + t.message
+                _response.value = "Failure: " + t.message
             }
             override fun onResponse(call: Call<String>, response: Response<String>){
                 _response.value = response.body()
