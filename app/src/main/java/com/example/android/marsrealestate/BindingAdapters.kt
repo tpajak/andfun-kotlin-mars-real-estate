@@ -26,7 +26,6 @@ import com.bumptech.glide.request.RequestOptions
 import com.example.android.marsrealestate.network.MarsProperty
 import com.example.android.marsrealestate.overview.PhotoGridAdapter
 
-// TODO (10) Add a binding adapter for the listData attribute that calls submitList on the RV adapter
 @BindingAdapter("listData")
 fun bindRecyclerView(recyclerView: RecyclerView, data: List<MarsProperty>?) {
     val adapter = recyclerView.adapter as PhotoGridAdapter
